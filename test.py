@@ -1,2 +1,2 @@
-t = int(input())
-m, n, k = int(input())
+g=[True]*(11)
+print(g)

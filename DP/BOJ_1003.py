@@ -1,3 +1,5 @@
+# 피보나치 함수(실버3)
+
 cache=[[0 for _ in range(2)] for _ in range(41)]
 
 cache[0][0] = 1
