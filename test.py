@@ -1,2 +1,3 @@
-g=[True]*(11)
-print(g)
+import sys
+exp = sys.stdin.readline().split()
+print(exp)
