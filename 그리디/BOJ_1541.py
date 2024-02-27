@@ -1,5 +1,4 @@
 #잃어버린 괄호(실버2)
-## 1) 부호가 전부 같은 경우
 value = input()
 m_value = value.split('-')
 for i in range (0, len(m_value)):
@@ -7,7 +6,6 @@ for i in range (0, len(m_value)):
         p_value = m_value[i].split('+')
         p_sum=0
         for j in p_value:
-            print(j)
             p_sum+=int(j)
         m_value[i] = int(p_sum)
 
