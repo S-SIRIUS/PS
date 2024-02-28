@@ -1,3 +1,4 @@
-a=[1,2,3,4,5]
-a.remove(1)
-print(a)
+from collections import deque
+queue= deque([1,2,3,4])
+queue.pop()
+print(queue)
