@@ -27,7 +27,7 @@ fields=[]
 for i in range(0, n):
     fields.append(list(map(int, input().split())))
 
-check=[[0 for _ in range(n)] for _ in range (m)]
+check=[[0 for _ in range(m)] for _ in range (n)]
 
 for i in range(0, n):
     if(2 in fields[i]):
@@ -39,7 +39,7 @@ bfs(target_x, target_y)
 
 for i in range(0, n):
     for j in range(0, m):
-        if fields[i][j]==1:
+        if (fields[i][j]==1) and (check[i][j]==0):
             fields[i][j]=-1   
 
 for i in fields:
