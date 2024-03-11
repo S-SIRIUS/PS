@@ -1,8 +1,8 @@
 #IOIOI(실버1)
-### 비효율
 def check(target, s, t_len, m):
     count=0
-    for i in range(0, m-t_len+1):
+    i=0
+    while i < m-t_len+1:
         if s[i] == target[0]:
             for j in range(1, t_len):
                 if s[i+j] == target[j]:
@@ -11,7 +11,9 @@ def check(target, s, t_len, m):
                         break
                     continue
                 else:
-                    break                
+                    i+=(j+1)
+                    break
+        i+=1                
     return count
 
 n = int(input())

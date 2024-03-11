@@ -1,3 +1,3 @@
-a="OOIOIOIOIIOII"
-b = a.count("IOI")
-print(b)
+import secrets
+a=secrets.token_hex(32)
+print(a)
