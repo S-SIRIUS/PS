@@ -1,3 +1,4 @@
+# 토마토(골드5)
 from collections import deque
 tomatoes=[]
 
