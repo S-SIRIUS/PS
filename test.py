@@ -1,2 +1,3 @@
-hmap = {'a':3, "b":7}
-print(len(hmap))
+g="BAABAAAAAB"
+count=3
+print(g[:1:-1])
