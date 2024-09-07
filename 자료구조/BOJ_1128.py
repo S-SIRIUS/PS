@@ -1,3 +1,4 @@
+# 절댓값 힙(실버1)
 import heapq
 import sys
 heap=[]
@@ -9,7 +10,6 @@ for i in range(n):
             print(0)
         else:
             answer = heapq.heappop(heap)
-            print(answer[1])
-    
+            print(answer[1])  
     else:
         heapq.heappush(heap, (abs(value),value))
