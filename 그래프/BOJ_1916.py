@@ -18,6 +18,7 @@ distances=[inf]*(n+1)
 def dijkstra(start):
     queue=[]
     heapq.heappush(queue,(0,start))
+    distances[start]=0
     while queue:
         distance, node = heapq.heappop(queue)
         if distances[node] < distance:
@@ -29,5 +30,4 @@ def dijkstra(start):
                     distances[i[0]] = cost
                     heapq.heappush(queue,(cost,i[0]))
 dijkstra(question[0])
-print(distances)
 print(distances[question[1]])            
