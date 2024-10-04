@@ -4,14 +4,14 @@ def back(nums, path, visited, m):
         print(*path)
         return
     
-    before=-1
+  
     
     for i in range(len(nums)):
-        if not visited[i] and nums[i] != before:
+        if not visited[i]:
                 visited[i] = True
                 back(nums, path + [nums[i]], visited, m)
                 visited[i] = False
-                before = nums[i]
+
 
 n, m = map(int, input().split())
 nums = list(map(int ,input().split()))
