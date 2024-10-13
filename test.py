@@ -1,22 +1,33 @@
 import sys
-sys.setrecursionlimit(10**7)
+input = sys.stdin.readline
 
-answer=0
-cases=[1, 2]
-def dfs(total, n):
-    global answer
-    global cases
+dx=[0, 1, 0, -1]
+dy=[1, 0, -1, 0]
+
+
+def way_change(way):
     
-    if total==n:
-        answer+=1
-        return
-    elif total>n:
-        return
-    else:
-        for i in cases:
-            dfs(total + i, n)
+    way+=1
+    if way>=4:
+        way=0
+    return way
+
 
 n = int(input())
-for case in cases:
-    dfs(case, n)  
-print(answer % 1234567)
+field=[[-1]*(n) for _ in range(n)]
+x=0
+y=0
+way=0
+
+for i in range(0, n*n):
+    field[x][y]=i
+    print(i)
+    new_x = x+dx[way]
+    new_y = y+dy[way]
+    if new_x < 0 or new_x>=n or new_y<0 or new_y>=n or field[new_x][new_y]!=-1:
+        way = way_change(way)
+    
+    x +=dx[way]
+    y +=dy[way]
+
+print(field)
