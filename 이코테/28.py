@@ -9,8 +9,8 @@ while start <= end:
         print(middle)
         break
     elif middle > array[middle]:
-        start = middle
+        start = middle+1
     else:
-        end=middle
+        end=middle-1
 
 
