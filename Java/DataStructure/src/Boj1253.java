@@ -15,7 +15,7 @@ public class Boj1253 {
         else {
             st = new StringTokenizer(br.readLine());
             for (int i = 0; i < n; i++) {
-                array[i] = Integer.parseInt(st.nextToken());
+                array[i] = Long.parseLong(st.nextToken());
             }
             Arrays.sort(array);
             int count = 0;
