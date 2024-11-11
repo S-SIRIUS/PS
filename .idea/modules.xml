@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java/Combination/Combination.iml" filepath="$PROJECT_DIR$/Java/Combination/Combination.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/DataStructure/DataStructure.iml" filepath="$PROJECT_DIR$/Java/DataStructure/DataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/NumberTheory/NumberTheory.iml" filepath="$PROJECT_DIR$/Java/NumberTheory/NumberTheory.iml" />
